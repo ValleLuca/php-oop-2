@@ -13,13 +13,17 @@ class Cinema extends Sale{
         $this->nsale = 5;
     }
 
+    public function getInfoCinema(){
+        return "{$this->nome} <br> {$this->indirizzo} <br> {$this->nsale} <br>";
+    }
+
     public function getNome(){
         return "$this->nome";
     }
     public function getIndirizzo(){
         return "$this->indirizzo";
     }
-    public function getSale(){
+    public function getnSale(){
         return "$this->nsale";
     }
 

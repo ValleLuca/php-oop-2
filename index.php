@@ -8,7 +8,15 @@ require_once __DIR__ .'./classes/Sale.php';
 require_once __DIR__ .'./classes/Spettacoli.php';
 require_once __DIR__ .'./classes/SchedaFilm.php';
 
-$bello = new Cinema;
+$cinemaselezionato = new Cinema;
+$selezionesala = new Sale("normale");
+$orarispettacoli = new Spettacoli(15, 2);
+$schedafilm = new SchedaFilm("UNCHARTED", 2022, "Avventura Azione", "Ruben Fleischer", "116 min");
 
-$ciao = $bello->getNome();
-var_dump($ciao);
+
+echo $cinemaselezionato->getInfoCinema();
+echo $selezionesala->getTipoSala();
+echo $orarispettacoli->getInfoSpettacoli();
+echo $schedafilm->getInfoFilm();
+
+
