@@ -1,34 +1,30 @@
 <?php
 
 class SchedaFilm{
-    protected $nome;
+    protected $titolo;
     protected $anno;
-    protected $genere;
-    protected $regia;
+    protected $attori;
     protected $durata;
 
-    public function __construct($_nome, $_anno, $_genere, $_regia, $_durata){
-        $this->nome = $_nome;
+    public function __construct($_titolo, $_anno, $_attori, $_durata){
+        $this->titolo = $_titolo;
         $this->anno = $_anno;
-        $this->genere = $_genere;
-        $this->regia = $_regia;
+        $this->attori = $_attori;
         $this->durata = $_durata;
     }
+
     public function getInfoFilm(){
-        return "{$this->nome} <br> {$this->anno} <br> {$this->genere} <br> {$this->regia} <br> {$this->durata}";
+        return "{$this->titolo} <br> {$this->anno} <br> {$this->attori} <br> {$this->durata}";
     }
 
-    public function getNome(){
-        return "$this->nome";
+    public function getTitolo(){
+        return "$this->titolo";
     }
     public function getAnno(){
         return "$this->anno";
     }
-    public function getGenere(){
-        return "$this->genere";
-    }
-    public function getRegia(){
-        return "$this->regia";
+    public function getAttori(){
+        return "$this->attori";
     }
     public function getDurata(){
         return "$this->durata";

@@ -12,6 +12,7 @@ class Spettacoli extends SchedaFilm{
         $this->sala = $_sala;
 
     }
+
     public function getInfoSpettacoli(){
         return "{$this->orari} <br> {$this->sala} <br>";
     }

@@ -6,7 +6,6 @@ require_once __DIR__ .'./SchedaFilm.php';
 class Sale extends Spettacoli{
     protected $TipoSala;
  
-
     public function __construct($_TipoSala){
         $this->TipoSala = $_TipoSala;
 
